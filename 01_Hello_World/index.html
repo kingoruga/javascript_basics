@@ -1,13 +1,131 @@
+<!--This is a JavaScript 101 assignment where you have complete creative freedom. That also means you have to design a simple user interface that has some interactive elements. Theme your "visual art installation" from your favorite movie, book, singer, or any other insterests. For instance you can spoil movies for us, make an animated cartoon character, pose a trivia question, etc.
+
+You need not make a big website, just make sure you follow these steps:
+
+Fork my Github repo for javascript_basics.
+Work inside the folder 01_Hello_World by editing the index.html file. You can add your own files if necessary. Open the index file in any browser to visualize your HTML and JS code.
+Use a JS framework like jQuery, Bootstrap, etc. Make sure you include them from a CDN in the <script> tag.
+Define one or more JS functions that do something visible to page elements; such as moving things around, adding new text, etc. You must use a variable and an array, and include a for-loop somewhere.
+Add some buttons or other interactive component - you MUST use the resources from the framework. Clicking the button must call a JS function. You can have multiple buttons.
+Commit your changes, push, and create a pull request agains my repo so I can see and grade your creations.
+Read up on JavaScript from the W3Schools resources included above or from elsewhere.
+
+Ask in discussion or Slack #general if anything is not clear.
+
+Enjoy!
+
+-CG-->
 <!DOCTYPE html>
 <html>
-  <head>
-    <script>
-      // JavaScript function definition here
-    </script> 
-  </head>
-  
-  <body>
-    <!-- Your page here (can include more script tags) -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-link rel="stylesheet" href="fatality.css"-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+    <script src=fatality.js></script>
+       
     
-  </body>
+    <title>Mambo Homework</title>
+</head>
+
+<body>
+    <!-- Your page here (can include more script tags) -->
+
+    <div id="wrapper">
+
+        <h1>Welcome to the MK Universe!</h1>
+
+
+        <!--div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+                <a href="index.html">Home</a>&nbsp;
+                <a href="About.html">About us</a> &nbsp;
+                <a href="Tour.html">Tour the Universe</a> &nbsp;
+                <a href="Contact.html">Choose your destiny</a>
+              </div>
+            </div>
+        </nav>
+      </div>
+    </div-->
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Mortal Kombat</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Home</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tour the Universe<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Dark Alley</a></li>
+						<li><a href="#">Shao Khan's Throne</a></li>
+						<li><a href="#">Circle of Doom</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+
+
+
+
+        <main>
+            <p><span class="resort">MK Universe</span> seeks your soul...</p>
+            <div id="loop"></div>
+            Choose your opponent to survive:
+            <ul>
+                <li>
+                    <Button id="button1">Noob Saibot</Button>
+                </li>
+                <br/>
+                <li>
+                    <Button id="button2">Cyrax</Button>
+                </li>
+                <br/>
+                <li>
+                    <Button id="button3">Johny Cage</Button>
+                </li>
+                <br/>
+                <li>
+                    <Button id="button4">Sub-zero</Button>
+                </li>
+                <br/>
+                <li>
+                    <Button id="button5">Scorpion</Button>
+                </li>
+            </ul>
+            
+          
+            <div>
+               <img src="jh.jpg" id="image" width="300px" height="200px">
+            </div>
+
+
+
+        </main>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
 </html>
